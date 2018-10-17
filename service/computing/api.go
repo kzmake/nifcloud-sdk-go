@@ -3,8 +3,6 @@
 package computing
 
 import (
-	"time"
-
 	"github.com/alice02/nifcloud-sdk-go/nifcloud"
 	"github.com/alice02/nifcloud-sdk-go/nifcloud/awsutil"
 	"github.com/alice02/nifcloud-sdk-go/nifcloud/request"
@@ -13633,7 +13631,7 @@ type AlarmEventHistorySetItem struct {
 
 	AlarmEvent *string `locationName:"alarmEvent" type:"string"`
 
-	AlarmEventDatetime *time.Time `locationName:"alarmEventDatetime" type:"timestamp" timestampFormat:""`
+	AlarmEventDatetime *string `locationName:"alarmEventDatetime" type:"string"`
 }
 
 // String returns the string representation
@@ -13653,7 +13651,7 @@ func (s *AlarmEventHistorySetItem) SetAlarmEvent(v string) *AlarmEventHistorySet
 }
 
 // SetAlarmEventDatetime sets the AlarmEventDatetime field's value.
-func (s *AlarmEventHistorySetItem) SetAlarmEventDatetime(v time.Time) *AlarmEventHistorySetItem {
+func (s *AlarmEventHistorySetItem) SetAlarmEventDatetime(v string) *AlarmEventHistorySetItem {
 	s.AlarmEventDatetime = &v
 	return s
 }
@@ -13693,7 +13691,7 @@ type AlarmRulesActivitiesEventSetItem struct {
 
 	AlarmRulesActivitiesEvent *string `locationName:"alarmRulesActivitiesEvent" type:"string"`
 
-	AlarmRulesActivitiesEventDatetime *time.Time `locationName:"alarmRulesActivitiesEventDatetime" type:"timestamp" timestampFormat:""`
+	AlarmRulesActivitiesEventDatetime *string `locationName:"alarmRulesActivitiesEventDatetime" type:"string"`
 
 	ResourceName *string `locationName:"resourceName" type:"string"`
 
@@ -13717,7 +13715,7 @@ func (s *AlarmRulesActivitiesEventSetItem) SetAlarmRulesActivitiesEvent(v string
 }
 
 // SetAlarmRulesActivitiesEventDatetime sets the AlarmRulesActivitiesEventDatetime field's value.
-func (s *AlarmRulesActivitiesEventSetItem) SetAlarmRulesActivitiesEventDatetime(v time.Time) *AlarmRulesActivitiesEventSetItem {
+func (s *AlarmRulesActivitiesEventSetItem) SetAlarmRulesActivitiesEventDatetime(v string) *AlarmRulesActivitiesEventSetItem {
 	s.AlarmRulesActivitiesEventDatetime = &v
 	return s
 }
@@ -14361,7 +14359,7 @@ func (s *AttachVolumeInput) SetVolumeId(v string) *AttachVolumeInput {
 type AttachVolumeOutput struct {
 	_ struct{} `type:"structure"`
 
-	AttachTime *time.Time `locationName:"attachTime" type:"timestamp" timestampFormat:""`
+	AttachTime *string `locationName:"attachTime" type:"string"`
 
 	Device *string `locationName:"device" type:"string"`
 
@@ -14387,7 +14385,7 @@ func (s AttachVolumeOutput) GoString() string {
 }
 
 // SetAttachTime sets the AttachTime field's value.
-func (s *AttachVolumeOutput) SetAttachTime(v time.Time) *AttachVolumeOutput {
+func (s *AttachVolumeOutput) SetAttachTime(v string) *AttachVolumeOutput {
 	s.AttachTime = &v
 	return s
 }
@@ -14431,7 +14429,7 @@ func (s *AttachVolumeOutput) SetVolumeId(v string) *AttachVolumeOutput {
 type Attachment struct {
 	_ struct{} `type:"structure"`
 
-	AttachTime *time.Time `locationName:"attachTime" type:"timestamp" timestampFormat:""`
+	AttachTime *string `locationName:"attachTime" type:"string"`
 
 	AttachmentID *string `locationName:"attachmentID" type:"string"`
 
@@ -14453,7 +14451,7 @@ func (s Attachment) GoString() string {
 }
 
 // SetAttachTime sets the AttachTime field's value.
-func (s *Attachment) SetAttachTime(v time.Time) *Attachment {
+func (s *Attachment) SetAttachTime(v string) *Attachment {
 	s.AttachTime = &v
 	return s
 }
@@ -14485,7 +14483,7 @@ func (s *Attachment) SetStatus(v string) *Attachment {
 type AttachmentSetItem struct {
 	_ struct{} `type:"structure"`
 
-	AttachTime *time.Time `locationName:"attachTime" type:"timestamp" timestampFormat:""`
+	AttachTime *string `locationName:"attachTime" type:"string"`
 
 	DeleteOnTermination *bool `locationName:"deleteOnTermination" type:"boolean"`
 
@@ -14511,7 +14509,7 @@ func (s AttachmentSetItem) GoString() string {
 }
 
 // SetAttachTime sets the AttachTime field's value.
-func (s *AttachmentSetItem) SetAttachTime(v time.Time) *AttachmentSetItem {
+func (s *AttachmentSetItem) SetAttachTime(v string) *AttachmentSetItem {
 	s.AttachTime = &v
 	return s
 }
@@ -14751,7 +14749,7 @@ type AutoScalingReservationSetItem struct {
 
 	ChangeInCapacity *int64 `locationName:"changeInCapacity" type:"integer"`
 
-	CreatedTime *time.Time `locationName:"createdTime" type:"timestamp" timestampFormat:""`
+	CreatedTime *string `locationName:"createdTime" type:"string"`
 
 	DefaultCooldown *int64 `locationName:"defaultCooldown" type:"integer"`
 
@@ -14813,7 +14811,7 @@ func (s *AutoScalingReservationSetItem) SetChangeInCapacity(v int64) *AutoScalin
 }
 
 // SetCreatedTime sets the CreatedTime field's value.
-func (s *AutoScalingReservationSetItem) SetCreatedTime(v time.Time) *AutoScalingReservationSetItem {
+func (s *AutoScalingReservationSetItem) SetCreatedTime(v string) *AutoScalingReservationSetItem {
 	s.CreatedTime = &v
 	return s
 }
@@ -14913,7 +14911,7 @@ type Autoscaling struct {
 
 	AutoScalingGroupName *string `locationName:"autoScalingGroupName" type:"string"`
 
-	ExpireTime *time.Time `locationName:"expireTime" type:"timestamp" timestampFormat:""`
+	ExpireTime *string `locationName:"expireTime" type:"string"`
 }
 
 // String returns the string representation
@@ -14933,7 +14931,7 @@ func (s *Autoscaling) SetAutoScalingGroupName(v string) *Autoscaling {
 }
 
 // SetExpireTime sets the ExpireTime field's value.
-func (s *Autoscaling) SetExpireTime(v time.Time) *Autoscaling {
+func (s *Autoscaling) SetExpireTime(v string) *Autoscaling {
 	s.ExpireTime = &v
 	return s
 }
@@ -14987,7 +14985,7 @@ func (s *AvailabilityZoneInfoSetItem) SetZoneState(v string) *AvailabilityZoneIn
 type BackupInformation struct {
 	_ struct{} `type:"structure"`
 
-	ExpirationDate *time.Time `locationName:"expirationDate" type:"timestamp" timestampFormat:""`
+	ExpirationDate *string `locationName:"expirationDate" type:"string"`
 
 	IsBackup *bool `locationName:"isBackup" type:"boolean"`
 }
@@ -15003,7 +15001,7 @@ func (s BackupInformation) GoString() string {
 }
 
 // SetExpirationDate sets the ExpirationDate field's value.
-func (s *BackupInformation) SetExpirationDate(v time.Time) *BackupInformation {
+func (s *BackupInformation) SetExpirationDate(v string) *BackupInformation {
 	s.ExpirationDate = &v
 	return s
 }
@@ -16781,7 +16779,7 @@ type CreateVolumeOutput struct {
 
 	AvailabilityZone *string `locationName:"availabilityZone" type:"string"`
 
-	CreateTime *time.Time `locationName:"createTime" type:"timestamp" timestampFormat:""`
+	CreateTime *string `locationName:"createTime" type:"string"`
 
 	DiskType *string `locationName:"diskType" type:"string"`
 
@@ -16819,7 +16817,7 @@ func (s *CreateVolumeOutput) SetAvailabilityZone(v string) *CreateVolumeOutput {
 }
 
 // SetCreateTime sets the CreateTime field's value.
-func (s *CreateVolumeOutput) SetCreateTime(v time.Time) *CreateVolumeOutput {
+func (s *CreateVolumeOutput) SetCreateTime(v string) *CreateVolumeOutput {
 	s.CreateTime = &v
 	return s
 }
@@ -17229,7 +17227,7 @@ type CustomerGatewaySetItem struct {
 
 	BgpAsn *string `locationName:"bgpAsn" type:"string"`
 
-	CreatedTime *time.Time `locationName:"createdTime" type:"timestamp" timestampFormat:""`
+	CreatedTime *string `locationName:"createdTime" type:"string"`
 
 	CustomerGatewayId *string `locationName:"customerGatewayId" type:"string"`
 
@@ -17267,7 +17265,7 @@ func (s *CustomerGatewaySetItem) SetBgpAsn(v string) *CustomerGatewaySetItem {
 }
 
 // SetCreatedTime sets the CreatedTime field's value.
-func (s *CustomerGatewaySetItem) SetCreatedTime(v time.Time) *CustomerGatewaySetItem {
+func (s *CustomerGatewaySetItem) SetCreatedTime(v string) *CustomerGatewaySetItem {
 	s.CreatedTime = &v
 	return s
 }
@@ -20381,7 +20379,7 @@ func (s *DetachVolumeInput) SetVolumeId(v string) *DetachVolumeInput {
 type DetachVolumeOutput struct {
 	_ struct{} `type:"structure"`
 
-	AttachTime *time.Time `locationName:"attachTime" type:"timestamp" timestampFormat:""`
+	AttachTime *string `locationName:"attachTime" type:"string"`
 
 	Device *string `locationName:"device" type:"string"`
 
@@ -20407,7 +20405,7 @@ func (s DetachVolumeOutput) GoString() string {
 }
 
 // SetAttachTime sets the AttachTime field's value.
-func (s *DetachVolumeOutput) SetAttachTime(v time.Time) *DetachVolumeOutput {
+func (s *DetachVolumeOutput) SetAttachTime(v string) *DetachVolumeOutput {
 	s.AttachTime = &v
 	return s
 }
@@ -21215,7 +21213,7 @@ func (s *ELBVersionInformation) SetVersion(v bool) *ELBVersionInformation {
 type Ebs struct {
 	_ struct{} `type:"structure"`
 
-	AttachTime *time.Time `locationName:"attachTime" type:"timestamp" timestampFormat:""`
+	AttachTime *string `locationName:"attachTime" type:"string"`
 
 	DeleteOnTermination *bool `locationName:"deleteOnTermination" type:"boolean"`
 
@@ -21239,7 +21237,7 @@ func (s Ebs) GoString() string {
 }
 
 // SetAttachTime sets the AttachTime field's value.
-func (s *Ebs) SetAttachTime(v time.Time) *Ebs {
+func (s *Ebs) SetAttachTime(v string) *Ebs {
 	s.AttachTime = &v
 	return s
 }
@@ -21379,7 +21377,7 @@ type ElasticLoadBalancerDescriptionsMemberItem struct {
 
 	AvailabilityZones []*string `locationName:"AvailabilityZones" locationNameList:"member" type:"list"`
 
-	CreatedTime *time.Time `locationName:"CreatedTime" type:"timestamp" timestampFormat:""`
+	CreatedTime *string `locationName:"CreatedTime" type:"string"`
 
 	DNSName *string `locationName:"DNSName" type:"string"`
 
@@ -21423,7 +21421,7 @@ func (s *ElasticLoadBalancerDescriptionsMemberItem) SetAvailabilityZones(v []*st
 }
 
 // SetCreatedTime sets the CreatedTime field's value.
-func (s *ElasticLoadBalancerDescriptionsMemberItem) SetCreatedTime(v time.Time) *ElasticLoadBalancerDescriptionsMemberItem {
+func (s *ElasticLoadBalancerDescriptionsMemberItem) SetCreatedTime(v string) *ElasticLoadBalancerDescriptionsMemberItem {
 	s.CreatedTime = &v
 	return s
 }
@@ -21961,7 +21959,7 @@ type ImagesSetItem struct {
 
 	KernelId *string `locationName:"kernelId" type:"string"`
 
-	LaunchTime *time.Time `locationName:"launchTime" type:"timestamp" timestampFormat:""`
+	LaunchTime *string `locationName:"launchTime" type:"string"`
 
 	Name *string `locationName:"name" type:"string"`
 
@@ -22073,7 +22071,7 @@ func (s *ImagesSetItem) SetKernelId(v string) *ImagesSetItem {
 }
 
 // SetLaunchTime sets the LaunchTime field's value.
-func (s *ImagesSetItem) SetLaunchTime(v time.Time) *ImagesSetItem {
+func (s *ImagesSetItem) SetLaunchTime(v string) *ImagesSetItem {
 	s.LaunchTime = &v
 	return s
 }
@@ -23037,7 +23035,7 @@ type InstancesSetItem struct {
 
 	DnsName *string `locationName:"dnsName" type:"string"`
 
-	ExpireTime *time.Time `locationName:"expireTime" type:"timestamp" timestampFormat:""`
+	ExpireTime *string `locationName:"expireTime" type:"string"`
 
 	HotAdd *string `locationName:"hotAdd" type:"string"`
 
@@ -23065,7 +23063,7 @@ type InstancesSetItem struct {
 
 	KeyName *string `locationName:"keyName" type:"string"`
 
-	LaunchTime *time.Time `locationName:"launchTime" type:"timestamp" timestampFormat:""`
+	LaunchTime *string `locationName:"launchTime" type:"string"`
 
 	Loadbalancing []*LoadbalancingSetItem `locationName:"loadbalancing" locationNameList:"item" type:"list"`
 
@@ -23195,7 +23193,7 @@ func (s *InstancesSetItem) SetDnsName(v string) *InstancesSetItem {
 }
 
 // SetExpireTime sets the ExpireTime field's value.
-func (s *InstancesSetItem) SetExpireTime(v time.Time) *InstancesSetItem {
+func (s *InstancesSetItem) SetExpireTime(v string) *InstancesSetItem {
 	s.ExpireTime = &v
 	return s
 }
@@ -23279,7 +23277,7 @@ func (s *InstancesSetItem) SetKeyName(v string) *InstancesSetItem {
 }
 
 // SetLaunchTime sets the LaunchTime field's value.
-func (s *InstancesSetItem) SetLaunchTime(v time.Time) *InstancesSetItem {
+func (s *InstancesSetItem) SetLaunchTime(v string) *InstancesSetItem {
 	s.LaunchTime = &v
 	return s
 }
@@ -23619,7 +23617,7 @@ func (s *IpAddressPoolsSetItem) SetStopIpAddress(v string) *IpAddressPoolsSetIte
 type IpPermissionsSetItem struct {
 	_ struct{} `type:"structure"`
 
-	AddDatetime *time.Time `locationName:"addDatetime" type:"timestamp" timestampFormat:""`
+	AddDatetime *string `locationName:"addDatetime" type:"string"`
 
 	Description *string `locationName:"description" type:"string"`
 
@@ -23647,7 +23645,7 @@ func (s IpPermissionsSetItem) GoString() string {
 }
 
 // SetAddDatetime sets the AddDatetime field's value.
-func (s *IpPermissionsSetItem) SetAddDatetime(v time.Time) *IpPermissionsSetItem {
+func (s *IpPermissionsSetItem) SetAddDatetime(v string) *IpPermissionsSetItem {
 	s.AddDatetime = &v
 	return s
 }
@@ -24195,7 +24193,7 @@ type LoadBalancerDescriptionsMemberItem struct {
 
 	AvailabilityZones []*string `locationName:"AvailabilityZones" locationNameList:"member" type:"list"`
 
-	CreatedTime *time.Time `locationName:"CreatedTime" type:"timestamp" timestampFormat:""`
+	CreatedTime *string `locationName:"CreatedTime" type:"string"`
 
 	DNSName *string `locationName:"DNSName" type:"string"`
 
@@ -24243,7 +24241,7 @@ func (s *LoadBalancerDescriptionsMemberItem) SetAvailabilityZones(v []*string) *
 }
 
 // SetCreatedTime sets the CreatedTime field's value.
-func (s *LoadBalancerDescriptionsMemberItem) SetCreatedTime(v time.Time) *LoadBalancerDescriptionsMemberItem {
+func (s *LoadBalancerDescriptionsMemberItem) SetCreatedTime(v string) *LoadBalancerDescriptionsMemberItem {
 	s.CreatedTime = &v
 	return s
 }
@@ -24443,7 +24441,7 @@ type LogSetItem struct {
 
 	Process *string `locationName:"process" type:"string"`
 
-	Time *time.Time `locationName:"time" type:"timestamp" timestampFormat:""`
+	Time *string `locationName:"time" type:"string"`
 }
 
 // String returns the string representation
@@ -24469,7 +24467,7 @@ func (s *LogSetItem) SetProcess(v string) *LogSetItem {
 }
 
 // SetTime sets the Time field's value.
-func (s *LogSetItem) SetTime(v time.Time) *LogSetItem {
+func (s *LogSetItem) SetTime(v string) *LogSetItem {
 	s.Time = &v
 	return s
 }
@@ -33811,9 +33809,9 @@ func (s *PerformanceChartSetItem) SetResourceName(v string) *PerformanceChartSet
 type Period struct {
 	_ struct{} `type:"structure"`
 
-	EndDate *time.Time `locationName:"endDate" type:"timestamp" timestampFormat:""`
+	EndDate *string `locationName:"endDate" type:"string"`
 
-	StartDate *time.Time `locationName:"startDate" type:"timestamp" timestampFormat:""`
+	StartDate *string `locationName:"startDate" type:"string"`
 
 	ValidityTerm *int64 `locationName:"validityTerm" type:"integer"`
 }
@@ -33829,13 +33827,13 @@ func (s Period) GoString() string {
 }
 
 // SetEndDate sets the EndDate field's value.
-func (s *Period) SetEndDate(v time.Time) *Period {
+func (s *Period) SetEndDate(v string) *Period {
 	s.EndDate = &v
 	return s
 }
 
 // SetStartDate sets the StartDate field's value.
-func (s *Period) SetStartDate(v time.Time) *Period {
+func (s *Period) SetStartDate(v string) *Period {
 	s.StartDate = &v
 	return s
 }
@@ -34069,7 +34067,7 @@ type PrivateLan struct {
 
 	CidrBlock *string `locationName:"cidrBlock" type:"string"`
 
-	CreatedTime *time.Time `locationName:"createdTime" type:"timestamp" timestampFormat:""`
+	CreatedTime *string `locationName:"createdTime" type:"string"`
 
 	Description *string `locationName:"description" type:"string"`
 
@@ -34129,7 +34127,7 @@ func (s *PrivateLan) SetCidrBlock(v string) *PrivateLan {
 }
 
 // SetCreatedTime sets the CreatedTime field's value.
-func (s *PrivateLan) SetCreatedTime(v time.Time) *PrivateLan {
+func (s *PrivateLan) SetCreatedTime(v string) *PrivateLan {
 	s.CreatedTime = &v
 	return s
 }
@@ -34231,7 +34229,7 @@ type PrivateLanSetItem struct {
 
 	CidrBlock *string `locationName:"cidrBlock" type:"string"`
 
-	CreatedTime *time.Time `locationName:"createdTime" type:"timestamp" timestampFormat:""`
+	CreatedTime *string `locationName:"createdTime" type:"string"`
 
 	Description *string `locationName:"description" type:"string"`
 
@@ -34283,7 +34281,7 @@ func (s *PrivateLanSetItem) SetCidrBlock(v string) *PrivateLanSetItem {
 }
 
 // SetCreatedTime sets the CreatedTime field's value.
-func (s *PrivateLanSetItem) SetCreatedTime(v time.Time) *PrivateLanSetItem {
+func (s *PrivateLanSetItem) SetCreatedTime(v string) *PrivateLanSetItem {
 	s.CreatedTime = &v
 	return s
 }
@@ -37459,7 +37457,7 @@ type ReservationSetItem struct {
 
 	AlarmTargetsSet []*AlarmTargetsSetItem `locationName:"alarmTargetsSet" locationNameList:"item" type:"list"`
 
-	CreatedTime *time.Time `locationName:"createdTime" type:"timestamp" timestampFormat:""`
+	CreatedTime *string `locationName:"createdTime" type:"string"`
 
 	Description *string `locationName:"description" type:"string"`
 
@@ -37523,7 +37521,7 @@ func (s *ReservationSetItem) SetAlarmTargetsSet(v []*AlarmTargetsSetItem) *Reser
 }
 
 // SetCreatedTime sets the CreatedTime field's value.
-func (s *ReservationSetItem) SetCreatedTime(v time.Time) *ReservationSetItem {
+func (s *ReservationSetItem) SetCreatedTime(v string) *ReservationSetItem {
 	s.CreatedTime = &v
 	return s
 }
@@ -38037,7 +38035,7 @@ type Router struct {
 
 	BackupInformation *BackupInformation `locationName:"backupInformation" type:"structure"`
 
-	CreatedTime *time.Time `locationName:"createdTime" type:"timestamp" timestampFormat:""`
+	CreatedTime *string `locationName:"createdTime" type:"string"`
 
 	Description *string `locationName:"description" type:"string"`
 
@@ -38095,7 +38093,7 @@ func (s *Router) SetBackupInformation(v *BackupInformation) *Router {
 }
 
 // SetCreatedTime sets the CreatedTime field's value.
-func (s *Router) SetCreatedTime(v time.Time) *Router {
+func (s *Router) SetCreatedTime(v string) *Router {
 	s.CreatedTime = &v
 	return s
 }
@@ -38391,7 +38389,7 @@ type RouterSetItem struct {
 
 	AvailabilityZone *string `locationName:"availabilityZone" type:"string"`
 
-	CreatedTime *time.Time `locationName:"createdTime" type:"timestamp" timestampFormat:""`
+	CreatedTime *string `locationName:"createdTime" type:"string"`
 
 	Description *string `locationName:"description" type:"string"`
 
@@ -38447,7 +38445,7 @@ func (s *RouterSetItem) SetAvailabilityZone(v string) *RouterSetItem {
 }
 
 // SetCreatedTime sets the CreatedTime field's value.
-func (s *RouterSetItem) SetCreatedTime(v time.Time) *RouterSetItem {
+func (s *RouterSetItem) SetCreatedTime(v string) *RouterSetItem {
 	s.CreatedTime = &v
 	return s
 }
@@ -40911,7 +40909,7 @@ type UserActivitiesSetItem struct {
 
 	CategoryName *string `locationName:"categoryName" type:"string"`
 
-	DateTime *time.Time `locationName:"dateTime" type:"timestamp" timestampFormat:""`
+	DateTime *string `locationName:"dateTime" type:"string"`
 
 	IpAddress *string `locationName:"ipAddress" type:"string"`
 
@@ -40939,7 +40937,7 @@ func (s *UserActivitiesSetItem) SetCategoryName(v string) *UserActivitiesSetItem
 }
 
 // SetDateTime sets the DateTime field's value.
-func (s *UserActivitiesSetItem) SetDateTime(v time.Time) *UserActivitiesSetItem {
+func (s *UserActivitiesSetItem) SetDateTime(v string) *UserActivitiesSetItem {
 	s.DateTime = &v
 	return s
 }
@@ -41069,7 +41067,7 @@ type VgwTelemetrySetItem struct {
 
 	AcceptedRouteCount *int64 `locationName:"acceptedRouteCount" type:"integer"`
 
-	LastStatusChange *time.Time `locationName:"lastStatusChange" type:"timestamp" timestampFormat:""`
+	LastStatusChange *string `locationName:"lastStatusChange" type:"string"`
 
 	OutsideIpAddress *string `locationName:"outsideIpAddress" type:"string"`
 
@@ -41095,7 +41093,7 @@ func (s *VgwTelemetrySetItem) SetAcceptedRouteCount(v int64) *VgwTelemetrySetIte
 }
 
 // SetLastStatusChange sets the LastStatusChange field's value.
-func (s *VgwTelemetrySetItem) SetLastStatusChange(v time.Time) *VgwTelemetrySetItem {
+func (s *VgwTelemetrySetItem) SetLastStatusChange(v string) *VgwTelemetrySetItem {
 	s.LastStatusChange = &v
 	return s
 }
@@ -41343,7 +41341,7 @@ type VolumeSetItem struct {
 
 	Charge *int64 `locationName:"charge" type:"integer"`
 
-	CreateTime *time.Time `locationName:"createTime" type:"timestamp" timestampFormat:""`
+	CreateTime *string `locationName:"createTime" type:"string"`
 
 	DiskType *string `locationName:"diskType" type:"string"`
 
@@ -41399,7 +41397,7 @@ func (s *VolumeSetItem) SetCharge(v int64) *VolumeSetItem {
 }
 
 // SetCreateTime sets the CreateTime field's value.
-func (s *VolumeSetItem) SetCreateTime(v time.Time) *VolumeSetItem {
+func (s *VolumeSetItem) SetCreateTime(v string) *VolumeSetItem {
 	s.CreateTime = &v
 	return s
 }
@@ -41577,7 +41575,7 @@ func (s *VpnConnectMeasuredRateSetItem) SetValue(v int64) *VpnConnectMeasuredRat
 type VpnConnection struct {
 	_ struct{} `type:"structure"`
 
-	CreatedTime *time.Time `locationName:"createdTime" type:"timestamp" timestampFormat:""`
+	CreatedTime *string `locationName:"createdTime" type:"string"`
 
 	CustomerGatewayConfiguration *string `locationName:"customerGatewayConfiguration" type:"string"`
 
@@ -41621,7 +41619,7 @@ func (s VpnConnection) GoString() string {
 }
 
 // SetCreatedTime sets the CreatedTime field's value.
-func (s *VpnConnection) SetCreatedTime(v time.Time) *VpnConnection {
+func (s *VpnConnection) SetCreatedTime(v string) *VpnConnection {
 	s.CreatedTime = &v
 	return s
 }
@@ -41719,7 +41717,7 @@ func (s *VpnConnection) SetVpnGatewayId(v string) *VpnConnection {
 type VpnConnectionSetItem struct {
 	_ struct{} `type:"structure"`
 
-	CreatedTime *time.Time `locationName:"createdTime" type:"timestamp" timestampFormat:""`
+	CreatedTime *string `locationName:"createdTime" type:"string"`
 
 	CustomerGatewayConfiguration *string `locationName:"customerGatewayConfiguration" type:"string"`
 
@@ -41763,7 +41761,7 @@ func (s VpnConnectionSetItem) GoString() string {
 }
 
 // SetCreatedTime sets the CreatedTime field's value.
-func (s *VpnConnectionSetItem) SetCreatedTime(v time.Time) *VpnConnectionSetItem {
+func (s *VpnConnectionSetItem) SetCreatedTime(v string) *VpnConnectionSetItem {
 	s.CreatedTime = &v
 	return s
 }
@@ -41867,7 +41865,7 @@ type VpnGateway struct {
 
 	AvailabilityZone *string `locationName:"availabilityZone" type:"string"`
 
-	CreatedTime *time.Time `locationName:"createdTime" type:"timestamp" timestampFormat:""`
+	CreatedTime *string `locationName:"createdTime" type:"string"`
 
 	GroupSet []*GroupSetItem `locationName:"groupSet" locationNameList:"item" type:"list"`
 
@@ -41921,7 +41919,7 @@ func (s *VpnGateway) SetAvailabilityZone(v string) *VpnGateway {
 }
 
 // SetCreatedTime sets the CreatedTime field's value.
-func (s *VpnGateway) SetCreatedTime(v time.Time) *VpnGateway {
+func (s *VpnGateway) SetCreatedTime(v string) *VpnGateway {
 	s.CreatedTime = &v
 	return s
 }
@@ -42209,7 +42207,7 @@ type VpnGatewaySetItem struct {
 
 	BackupInformation *BackupInformation `locationName:"backupInformation" type:"structure"`
 
-	CreatedTime *time.Time `locationName:"createdTime" type:"timestamp" timestampFormat:""`
+	CreatedTime *string `locationName:"createdTime" type:"string"`
 
 	DeviceIndex *int64 `locationName:"deviceIndex" type:"integer"`
 
@@ -42277,7 +42275,7 @@ func (s *VpnGatewaySetItem) SetBackupInformation(v *BackupInformation) *VpnGatew
 }
 
 // SetCreatedTime sets the CreatedTime field's value.
-func (s *VpnGatewaySetItem) SetCreatedTime(v time.Time) *VpnGatewaySetItem {
+func (s *VpnGatewaySetItem) SetCreatedTime(v string) *VpnGatewaySetItem {
 	s.CreatedTime = &v
 	return s
 }
