@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/session"
-	"github.com/alice02/nifcloud-sdk-go/service/s3/s3manager"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/session"
+	"github.com/kzmake/nifcloud-sdk-go/service/s3/s3manager"
 )
 
 // SyncFolderIterator is used to upload a given folder

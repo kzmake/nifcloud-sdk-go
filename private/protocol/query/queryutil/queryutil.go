@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/alice02/nifcloud-sdk-go/private/protocol"
+	"github.com/kzmake/nifcloud-sdk-go/private/protocol"
 )
 
 // Parse parses an object i and fills a url.Values object. The isEC2 flag

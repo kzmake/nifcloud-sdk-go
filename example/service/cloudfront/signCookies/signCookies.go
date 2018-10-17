@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/alice02/nifcloud-sdk-go/service/cloudfront/sign"
+	"github.com/kzmake/nifcloud-sdk-go/service/cloudfront/sign"
 )
 
 // Makes a request for object using CloudFront cookie signing, and outputs

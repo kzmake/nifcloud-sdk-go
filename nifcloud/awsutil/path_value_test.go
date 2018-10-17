@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/awsutil"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/awsutil"
 )
 
 type Struct struct {

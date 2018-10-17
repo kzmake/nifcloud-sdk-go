@@ -7,9 +7,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/session"
-	"github.com/alice02/nifcloud-sdk-go/service/s3"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/session"
+	"github.com/kzmake/nifcloud-sdk-go/service/s3"
 )
 
 // Searches the buckets of an account that match the prefix, and deletes

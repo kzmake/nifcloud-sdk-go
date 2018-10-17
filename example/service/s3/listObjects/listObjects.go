@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/session"
-	"github.com/alice02/nifcloud-sdk-go/service/s3"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/session"
+	"github.com/kzmake/nifcloud-sdk-go/service/s3"
 )
 
 // Lists all objects in a bucket using pagination

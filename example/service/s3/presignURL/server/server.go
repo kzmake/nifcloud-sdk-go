@@ -13,12 +13,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/endpoints"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/session"
-	"github.com/alice02/nifcloud-sdk-go/service/s3"
-	"github.com/alice02/nifcloud-sdk-go/service/s3/s3iface"
-	"github.com/alice02/nifcloud-sdk-go/service/s3/s3manager"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/endpoints"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/session"
+	"github.com/kzmake/nifcloud-sdk-go/service/s3"
+	"github.com/kzmake/nifcloud-sdk-go/service/s3/s3iface"
+	"github.com/kzmake/nifcloud-sdk-go/service/s3/s3manager"
 )
 
 // server.go is an example of a service that vends lists for requests for presigned

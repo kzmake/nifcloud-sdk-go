@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/awserr"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/client"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/credentials"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/ec2metadata"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/awserr"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/client"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/credentials"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/ec2metadata"
 )
 
 // ProviderName provides a name of EC2Role provider

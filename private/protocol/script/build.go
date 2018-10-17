@@ -6,9 +6,9 @@ package script
 import (
 	"net/url"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/awserr"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/request"
-	"github.com/alice02/nifcloud-sdk-go/private/protocol/query/queryutil"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/awserr"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/request"
+	"github.com/kzmake/nifcloud-sdk-go/private/protocol/query/queryutil"
 )
 
 // BuildHandler is a named request handler for building script protocol requests

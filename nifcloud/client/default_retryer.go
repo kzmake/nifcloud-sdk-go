@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/request"
-	"github.com/alice02/nifcloud-sdk-go/internal/sdkrand"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/request"
+	"github.com/kzmake/nifcloud-sdk-go/internal/sdkrand"
 )
 
 // DefaultRetryer implements basic retry logic using exponential backoff for

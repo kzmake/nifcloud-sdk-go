@@ -2,7 +2,7 @@
 
 package request
 
-import "github.com/alice02/nifcloud-sdk-go/nifcloud"
+import "github.com/kzmake/nifcloud-sdk-go/nifcloud"
 
 // setContext updates the Request to use the passed in context for cancellation.
 // Context will also be used for request retry delay.

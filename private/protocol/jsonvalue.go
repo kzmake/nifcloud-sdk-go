@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud"
 )
 
 // EscapeMode is the mode that should be use for escaping a value

@@ -9,8 +9,8 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud"
-	"github.com/alice02/nifcloud-sdk-go/private/protocol"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud"
+	"github.com/kzmake/nifcloud-sdk-go/private/protocol"
 )
 
 // UnmarshalJSON reads a stream and unmarshals the results in object v.

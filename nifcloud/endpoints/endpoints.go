@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/awserr"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/awserr"
 )
 
 // Options provide the configuration needed to direct how the

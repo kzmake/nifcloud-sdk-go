@@ -7,12 +7,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/client"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/client/metadata"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/request"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/signer/v4"
-	"github.com/alice02/nifcloud-sdk-go/awstesting/unit"
-	"github.com/alice02/nifcloud-sdk-go/private/protocol/jsonrpc"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/client"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/client/metadata"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/request"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/signer/v4"
+	"github.com/kzmake/nifcloud-sdk-go/awstesting/unit"
+	"github.com/kzmake/nifcloud-sdk-go/private/protocol/jsonrpc"
 )
 
 func BenchmarkTimeoutReadCloser(b *testing.B) {

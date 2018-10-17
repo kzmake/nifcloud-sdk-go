@@ -2,9 +2,9 @@
 package unit
 
 import (
-	"github.com/alice02/nifcloud-sdk-go/nifcloud"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/credentials"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/session"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/credentials"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/session"
 )
 
 // Session is a shared session for unit tests to use.

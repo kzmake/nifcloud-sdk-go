@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"net/http/httptest"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/client"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/client/metadata"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/session"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/client"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/client/metadata"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/session"
 )
 
 // Session is a mock session which is used to hit the mock server

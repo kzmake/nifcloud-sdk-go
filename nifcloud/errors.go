@@ -1,6 +1,6 @@
 package nifcloud
 
-import "github.com/alice02/nifcloud-sdk-go/nifcloud/awserr"
+import "github.com/kzmake/nifcloud-sdk-go/nifcloud/awserr"
 
 var (
 	// ErrMissingRegion is an error that is returned if region configuration is

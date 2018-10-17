@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/credentials"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/credentials"
 )
 
 var testCredentials = credentials.NewStaticCredentials("AKID", "SECRET", "SESSION")

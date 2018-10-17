@@ -13,17 +13,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/alice02/nifcloud-sdk-go/awstesting"
-	"github.com/alice02/nifcloud-sdk-go/awstesting/unit"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/client"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/client/metadata"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/request"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/signer/v4"
-	"github.com/alice02/nifcloud-sdk-go/private/protocol"
-	"github.com/alice02/nifcloud-sdk-go/private/protocol/query"
-	"github.com/alice02/nifcloud-sdk-go/private/protocol/xml/xmlutil"
-	"github.com/alice02/nifcloud-sdk-go/private/util"
+	"github.com/kzmake/nifcloud-sdk-go/awstesting"
+	"github.com/kzmake/nifcloud-sdk-go/awstesting/unit"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/client"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/client/metadata"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/request"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/signer/v4"
+	"github.com/kzmake/nifcloud-sdk-go/private/protocol"
+	"github.com/kzmake/nifcloud-sdk-go/private/protocol/query"
+	"github.com/kzmake/nifcloud-sdk-go/private/protocol/xml/xmlutil"
+	"github.com/kzmake/nifcloud-sdk-go/private/util"
 )
 
 var _ bytes.Buffer // always import bytes

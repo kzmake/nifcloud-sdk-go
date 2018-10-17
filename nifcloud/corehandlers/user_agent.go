@@ -4,8 +4,8 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/request"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/request"
 )
 
 // SDKVersionUserAgentHandler is a request handler for adding the SDK Version

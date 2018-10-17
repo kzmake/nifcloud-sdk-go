@@ -3,12 +3,12 @@
 package script
 
 import (
-	"github.com/alice02/nifcloud-sdk-go/nifcloud"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/client"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/client/metadata"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/request"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/signer/v4"
-	"github.com/alice02/nifcloud-sdk-go/private/protocol/script"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/client"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/client/metadata"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/request"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/signer/v4"
+	"github.com/kzmake/nifcloud-sdk-go/private/protocol/script"
 )
 
 // Script provides the API operation methods for making requests to

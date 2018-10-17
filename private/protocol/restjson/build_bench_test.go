@@ -8,13 +8,13 @@ import (
 	"os"
 	"testing"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/credentials"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/endpoints"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/request"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/session"
-	"github.com/alice02/nifcloud-sdk-go/private/protocol/restjson"
-	"github.com/alice02/nifcloud-sdk-go/service/elastictranscoder"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/credentials"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/endpoints"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/request"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/session"
+	"github.com/kzmake/nifcloud-sdk-go/private/protocol/restjson"
+	"github.com/kzmake/nifcloud-sdk-go/service/elastictranscoder"
 )
 
 var (

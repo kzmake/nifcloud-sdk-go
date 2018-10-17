@@ -4,8 +4,8 @@
 package kms
 
 import (
-	"github.com/alice02/nifcloud-sdk-go/awstesting/integration/smoke"
-	"github.com/alice02/nifcloud-sdk-go/service/kms"
+	"github.com/kzmake/nifcloud-sdk-go/awstesting/integration/smoke"
+	"github.com/kzmake/nifcloud-sdk-go/service/kms"
 	"github.com/gucumber/gucumber"
 )
 

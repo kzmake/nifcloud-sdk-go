@@ -4,8 +4,8 @@
 package emr
 
 import (
-	"github.com/alice02/nifcloud-sdk-go/awstesting/integration/smoke"
-	"github.com/alice02/nifcloud-sdk-go/service/emr"
+	"github.com/kzmake/nifcloud-sdk-go/awstesting/integration/smoke"
+	"github.com/kzmake/nifcloud-sdk-go/service/emr"
 	"github.com/gucumber/gucumber"
 )
 

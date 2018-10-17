@@ -4,8 +4,8 @@
 package directconnect
 
 import (
-	"github.com/alice02/nifcloud-sdk-go/awstesting/integration/smoke"
-	"github.com/alice02/nifcloud-sdk-go/service/directconnect"
+	"github.com/kzmake/nifcloud-sdk-go/awstesting/integration/smoke"
+	"github.com/kzmake/nifcloud-sdk-go/service/directconnect"
 	"github.com/gucumber/gucumber"
 )
 

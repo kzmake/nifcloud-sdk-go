@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/alice02/nifcloud-sdk-go/private/util"
+	"github.com/kzmake/nifcloud-sdk-go/private/util"
 )
 
 // ZeroReader is a io.Reader which will always write zeros to the byte slice provided.

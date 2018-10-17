@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/alice02/nifcloud-sdk-go/private/protocol"
+	"github.com/kzmake/nifcloud-sdk-go/private/protocol"
 )
 
 // BuildXML will serialize params into an xml.Encoder.

@@ -4,7 +4,7 @@ import (
 	"io"
 	"sync"
 
-	"github.com/alice02/nifcloud-sdk-go/internal/sdkio"
+	"github.com/kzmake/nifcloud-sdk-go/internal/sdkio"
 )
 
 // offsetReader is a thread-safe io.ReadCloser to prevent racing

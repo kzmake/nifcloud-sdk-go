@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/session"
-	"github.com/alice02/nifcloud-sdk-go/service/dynamodb"
-	"github.com/alice02/nifcloud-sdk-go/service/dynamodb/expression"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/session"
+	"github.com/kzmake/nifcloud-sdk-go/service/dynamodb"
+	"github.com/kzmake/nifcloud-sdk-go/service/dynamodb/expression"
 )
 
 func exitWithError(err error) {

@@ -4,7 +4,7 @@ import (
 	"io"
 	"time"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/awserr"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/awserr"
 )
 
 var timeoutErr = awserr.New(

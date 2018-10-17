@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/alice02/nifcloud-sdk-go/private/protocol"
+	"github.com/kzmake/nifcloud-sdk-go/private/protocol"
 	"github.com/stretchr/testify/assert"
 )
 

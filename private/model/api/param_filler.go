@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/alice02/nifcloud-sdk-go/private/util"
+	"github.com/kzmake/nifcloud-sdk-go/private/util"
 )
 
 // A paramFiller provides string formatting for a shape and its types.

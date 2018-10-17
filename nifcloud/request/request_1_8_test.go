@@ -10,10 +10,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/request"
-	"github.com/alice02/nifcloud-sdk-go/awstesting"
-	"github.com/alice02/nifcloud-sdk-go/awstesting/unit"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/request"
+	"github.com/kzmake/nifcloud-sdk-go/awstesting"
+	"github.com/kzmake/nifcloud-sdk-go/awstesting/unit"
 )
 
 func TestResetBody_WithEmptyBody(t *testing.T) {

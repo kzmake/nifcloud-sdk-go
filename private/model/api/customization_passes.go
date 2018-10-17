@@ -145,7 +145,7 @@ func mergeServicesCustomizations(a *API) {
 
 	for n := range a.Shapes {
 		if _, ok := serviceAPI.Shapes[n]; ok {
-			a.Shapes[n].resolvePkg = "github.com/alice02/nifcloud-sdk-go/service/" + info.dstName
+			a.Shapes[n].resolvePkg = "github.com/kzmake/nifcloud-sdk-go/service/" + info.dstName
 		}
 	}
 }

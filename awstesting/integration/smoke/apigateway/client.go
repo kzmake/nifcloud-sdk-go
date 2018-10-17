@@ -4,8 +4,8 @@
 package apigateway
 
 import (
-	"github.com/alice02/nifcloud-sdk-go/awstesting/integration/smoke"
-	"github.com/alice02/nifcloud-sdk-go/service/apigateway"
+	"github.com/kzmake/nifcloud-sdk-go/awstesting/integration/smoke"
+	"github.com/kzmake/nifcloud-sdk-go/service/apigateway"
 	"github.com/gucumber/gucumber"
 )
 

@@ -7,9 +7,9 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud"
-	"github.com/alice02/nifcloud-sdk-go/service/dynamodb"
-	"github.com/alice02/nifcloud-sdk-go/service/dynamodb/dynamodbiface"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud"
+	"github.com/kzmake/nifcloud-sdk-go/service/dynamodb"
+	"github.com/kzmake/nifcloud-sdk-go/service/dynamodb/dynamodbiface"
 )
 
 // A fakeDynamoDB instance. During testing, instatiate ItemGetter, then simply

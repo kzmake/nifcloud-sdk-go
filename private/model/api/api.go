@@ -240,7 +240,7 @@ func (a *API) ShapeListErrors() []*Shape {
 // resetImports resets the import map to default values.
 func (a *API) resetImports() {
 	a.imports = map[string]bool{
-		"github.com/alice02/nifcloud-sdk-go/nifcloud": true,
+		"github.com/kzmake/nifcloud-sdk-go/nifcloud": true,
 	}
 }
 
@@ -296,16 +296,16 @@ var tplAPI = template.Must(template.New("api").Parse(`
 // APIGoCode renders the API in Go code. Returning it as a string
 func (a *API) APIGoCode() string {
 	a.resetImports()
-	a.imports["github.com/alice02/nifcloud-sdk-go/nifcloud/awsutil"] = true
-	a.imports["github.com/alice02/nifcloud-sdk-go/nifcloud/request"] = true
+	a.imports["github.com/kzmake/nifcloud-sdk-go/nifcloud/awsutil"] = true
+	a.imports["github.com/kzmake/nifcloud-sdk-go/nifcloud/request"] = true
 	if a.OperationHasOutputPlaceholder() {
-		a.imports["github.com/alice02/nifcloud-sdk-go/private/protocol/"+a.ProtocolPackage()] = true
-		a.imports["github.com/alice02/nifcloud-sdk-go/private/protocol"] = true
+		a.imports["github.com/kzmake/nifcloud-sdk-go/private/protocol/"+a.ProtocolPackage()] = true
+		a.imports["github.com/kzmake/nifcloud-sdk-go/private/protocol"] = true
 	}
 
 	for _, op := range a.Operations {
 		if op.AuthType == "none" {
-			a.imports["github.com/alice02/nifcloud-sdk-go/nifcloud/credentials"] = true
+			a.imports["github.com/kzmake/nifcloud-sdk-go/nifcloud/credentials"] = true
 			break
 		}
 	}
@@ -581,19 +581,19 @@ func (a *API) ServicePackageDoc() string {
 // ServiceGoCode renders service go code. Returning it as a string.
 func (a *API) ServiceGoCode() string {
 	a.resetImports()
-	a.imports["github.com/alice02/nifcloud-sdk-go/nifcloud/client"] = true
-	a.imports["github.com/alice02/nifcloud-sdk-go/nifcloud/client/metadata"] = true
-	a.imports["github.com/alice02/nifcloud-sdk-go/nifcloud/request"] = true
+	a.imports["github.com/kzmake/nifcloud-sdk-go/nifcloud/client"] = true
+	a.imports["github.com/kzmake/nifcloud-sdk-go/nifcloud/client/metadata"] = true
+	a.imports["github.com/kzmake/nifcloud-sdk-go/nifcloud/request"] = true
 	if a.Metadata.SignatureVersion == "v2" {
-		a.imports["github.com/alice02/nifcloud-sdk-go/private/signer/v2"] = true
-		a.imports["github.com/alice02/nifcloud-sdk-go/nifcloud/corehandlers"] = true
+		a.imports["github.com/kzmake/nifcloud-sdk-go/private/signer/v2"] = true
+		a.imports["github.com/kzmake/nifcloud-sdk-go/nifcloud/corehandlers"] = true
 	} else if a.Metadata.SignatureVersion == "v2-computing" {
-		a.imports["github.com/alice02/nifcloud-sdk-go/private/signer/v2computing"] = true
-		a.imports["github.com/alice02/nifcloud-sdk-go/nifcloud/corehandlers"] = true
+		a.imports["github.com/kzmake/nifcloud-sdk-go/private/signer/v2computing"] = true
+		a.imports["github.com/kzmake/nifcloud-sdk-go/nifcloud/corehandlers"] = true
 	} else {
-		a.imports["github.com/alice02/nifcloud-sdk-go/nifcloud/signer/v4"] = true
+		a.imports["github.com/kzmake/nifcloud-sdk-go/nifcloud/signer/v4"] = true
 	}
-	a.imports["github.com/alice02/nifcloud-sdk-go/private/protocol/"+a.ProtocolPackage()] = true
+	a.imports["github.com/kzmake/nifcloud-sdk-go/private/protocol/"+a.ProtocolPackage()] = true
 
 	var buf bytes.Buffer
 	err := tplService.Execute(&buf, a)
@@ -621,8 +621,8 @@ func (a *API) ExampleGoCode() string {
 		"bytes",
 		"fmt",
 		"time",
-		"github.com/alice02/nifcloud-sdk-go/nifcloud",
-		"github.com/alice02/nifcloud-sdk-go/nifcloud/session",
+		"github.com/kzmake/nifcloud-sdk-go/nifcloud",
+		"github.com/kzmake/nifcloud-sdk-go/nifcloud/session",
 		path.Join(a.SvcClientImportPath, a.PackageName()),
 	)
 	for k := range imports {
@@ -699,8 +699,8 @@ var _ {{ .StructName }}API = (*{{ .PackageName }}.{{ .StructName }})(nil)
 func (a *API) InterfaceGoCode() string {
 	a.resetImports()
 	a.imports = map[string]bool{
-		"github.com/alice02/nifcloud-sdk-go/nifcloud":         true,
-		"github.com/alice02/nifcloud-sdk-go/nifcloud/request": true,
+		"github.com/kzmake/nifcloud-sdk-go/nifcloud":         true,
+		"github.com/kzmake/nifcloud-sdk-go/nifcloud/request": true,
 		path.Join(a.SvcClientImportPath, a.PackageName()):     true,
 	}
 

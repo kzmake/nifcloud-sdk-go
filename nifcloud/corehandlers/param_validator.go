@@ -1,6 +1,6 @@
 package corehandlers
 
-import "github.com/alice02/nifcloud-sdk-go/nifcloud/request"
+import "github.com/kzmake/nifcloud-sdk-go/nifcloud/request"
 
 // ValidateParametersHandler is a request handler to validate the input parameters.
 // Validating parameters only has meaning if done prior to the request being sent.

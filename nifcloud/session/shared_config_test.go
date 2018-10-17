@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/credentials"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/credentials"
 	"github.com/go-ini/ini"
 	"github.com/stretchr/testify/assert"
 )

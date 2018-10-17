@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/alice02/nifcloud-sdk-go/internal/sdkio"
+	"github.com/kzmake/nifcloud-sdk-go/internal/sdkio"
 	"github.com/stretchr/testify/assert"
 )
 

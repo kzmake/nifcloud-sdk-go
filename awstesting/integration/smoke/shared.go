@@ -13,10 +13,10 @@ import (
 
 	"github.com/gucumber/gucumber"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/awserr"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/awsutil"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/session"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/awserr"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/awsutil"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/session"
 )
 
 // Session is a shared session for all integration smoke tests to use.

@@ -4,8 +4,8 @@
 package cloudwatch
 
 import (
-	"github.com/alice02/nifcloud-sdk-go/awstesting/integration/smoke"
-	"github.com/alice02/nifcloud-sdk-go/service/cloudwatch"
+	"github.com/kzmake/nifcloud-sdk-go/awstesting/integration/smoke"
+	"github.com/kzmake/nifcloud-sdk-go/service/cloudwatch"
 	"github.com/gucumber/gucumber"
 )
 

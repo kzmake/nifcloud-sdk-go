@@ -5,9 +5,9 @@ package s3manager
 import (
 	"testing"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud"
-	"github.com/alice02/nifcloud-sdk-go/awstesting/integration"
-	"github.com/alice02/nifcloud-sdk-go/service/s3/s3manager"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud"
+	"github.com/kzmake/nifcloud-sdk-go/awstesting/integration"
+	"github.com/kzmake/nifcloud-sdk-go/service/s3/s3manager"
 )
 
 func TestGetBucketRegion(t *testing.T) {

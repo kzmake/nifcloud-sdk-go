@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/alice02/nifcloud-sdk-go/private/protocol/json/jsonutil"
+	"github.com/kzmake/nifcloud-sdk-go/private/protocol/json/jsonutil"
 	"github.com/stretchr/testify/assert"
 )
 

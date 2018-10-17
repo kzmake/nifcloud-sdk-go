@@ -4,8 +4,8 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/credentials"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/defaults"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/credentials"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/defaults"
 )
 
 // EnvProviderName provides a name of the provider when config is loaded from environment.

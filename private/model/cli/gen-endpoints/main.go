@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/endpoints"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/endpoints"
 )
 
 // Generates the endpoints from json description

@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"sort"
 
-	"github.com/alice02/nifcloud-sdk-go/private/model/api"
+	"github.com/kzmake/nifcloud-sdk-go/private/model/api"
 )
 
 func main() {

@@ -1,10 +1,10 @@
 package awstesting
 
 import (
-	"github.com/alice02/nifcloud-sdk-go/nifcloud"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/client"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/client/metadata"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/defaults"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/client"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/client/metadata"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/defaults"
 )
 
 // NewClient creates and initializes a generic service client for testing.

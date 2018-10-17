@@ -5,13 +5,13 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/request"
-	"github.com/alice02/nifcloud-sdk-go/awstesting"
-	"github.com/alice02/nifcloud-sdk-go/awstesting/unit"
-	"github.com/alice02/nifcloud-sdk-go/service/dynamodb"
-	"github.com/alice02/nifcloud-sdk-go/service/route53"
-	"github.com/alice02/nifcloud-sdk-go/service/s3"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/request"
+	"github.com/kzmake/nifcloud-sdk-go/awstesting"
+	"github.com/kzmake/nifcloud-sdk-go/awstesting/unit"
+	"github.com/kzmake/nifcloud-sdk-go/service/dynamodb"
+	"github.com/kzmake/nifcloud-sdk-go/service/route53"
+	"github.com/kzmake/nifcloud-sdk-go/service/s3"
 )
 
 // Use DynamoDB methods for simplicity

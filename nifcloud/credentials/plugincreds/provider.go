@@ -95,8 +95,8 @@ import (
 	"fmt"
 	"plugin"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/awserr"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/credentials"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/awserr"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/credentials"
 )
 
 // ProviderSymbolName the symbol name the SDK will use to lookup the plugin

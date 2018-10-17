@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/alice02/nifcloud-sdk-go/awstesting"
-	"github.com/alice02/nifcloud-sdk-go/internal/shareddefaults"
+	"github.com/kzmake/nifcloud-sdk-go/awstesting"
+	"github.com/kzmake/nifcloud-sdk-go/internal/shareddefaults"
 )
 
 func TestSharedCredsFilename(t *testing.T) {

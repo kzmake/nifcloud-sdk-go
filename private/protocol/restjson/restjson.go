@@ -10,10 +10,10 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/awserr"
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/request"
-	"github.com/alice02/nifcloud-sdk-go/private/protocol/jsonrpc"
-	"github.com/alice02/nifcloud-sdk-go/private/protocol/rest"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/awserr"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/request"
+	"github.com/kzmake/nifcloud-sdk-go/private/protocol/jsonrpc"
+	"github.com/kzmake/nifcloud-sdk-go/private/protocol/rest"
 )
 
 // BuildHandler is a named request handler for building restjson protocol requests

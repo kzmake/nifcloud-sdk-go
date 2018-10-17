@@ -5,9 +5,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/alice02/nifcloud-sdk-go/nifcloud/credentials"
-	"github.com/alice02/nifcloud-sdk-go/awstesting"
-	"github.com/alice02/nifcloud-sdk-go/internal/shareddefaults"
+	"github.com/kzmake/nifcloud-sdk-go/nifcloud/credentials"
+	"github.com/kzmake/nifcloud-sdk-go/awstesting"
+	"github.com/kzmake/nifcloud-sdk-go/internal/shareddefaults"
 )
 
 func TestLoadEnvConfig_Creds(t *testing.T) {
