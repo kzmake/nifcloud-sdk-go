@@ -12923,8 +12923,8 @@
           "locationName": "instancesSet",
           "shape": "InstancesSet"
         },
-        "PrivateLanId": {
-          "locationName": "privateLanId",
+        "NetworkId": {
+          "locationName": "networkId",
           "shape": "String"
         },
         "PrivateLanName": {
